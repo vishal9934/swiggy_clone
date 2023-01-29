@@ -23,6 +23,7 @@
     height: 80px;
     background: #fff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   .navbar .left {
@@ -337,6 +338,7 @@
   .footer-content {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     background-color: #000000;
     justify-content: space-around;
     max-width: 1200px;
@@ -392,7 +394,14 @@
 
 
 
-  
+  @media screen and (max-width:300px){
+      .footer-content{
+        flex-wrap: wrap;
+        width: 100%;
+        grid-template-columns: repeat(1,100%);
+      }
+      
+  }
   @media screen and (max-width:480px) {
 
 
